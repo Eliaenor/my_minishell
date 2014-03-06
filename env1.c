@@ -58,7 +58,6 @@ char		**ft_addto_env(t_data *data, char *newvar)
 int			set_var_env(t_data *data, char *varenv)
 {
 	int		len;
-	int		lenofvar;
 	int		i;
 	char	**tbl;
 
@@ -67,7 +66,6 @@ int			set_var_env(t_data *data, char *varenv)
 	len = ft_strlen(tbl[0]);
 	while (data->environ[i] && ft_strncmp(data->environ[i], tbl[0], len) != 0)
 		i++;
-	lenofvar = ft_strlen(tbl[1]);
 	if (data->environ[i])
 	{
 		free(data->environ[i]);

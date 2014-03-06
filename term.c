@@ -38,11 +38,9 @@ int			ft_outc(int c)
 
 int			ft_putstr_term(char *str, t_data *data)
 {
-	int		i;
 	int		char_to_print;
 	char	*term_name;
 
-	i = 0;
 	term_name = get_var_env(data,"TERM=");
 	if (term_name == NULL)
 		return (1);

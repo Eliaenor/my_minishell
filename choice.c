@@ -14,10 +14,8 @@
 
 void		ft_choice(char **args, t_data *data)
 {
-	char		*tmp;
 	struct stat		stats;
 
-	tmp = NULL;
 	if (ft_strcmp(args[0], "env") == 0 || ft_strcmp(args[0], "setenv") == 0)
 		ft_choice_part2(args, data);
 	else if (ft_strcmp(args[0], "cd") == 0)

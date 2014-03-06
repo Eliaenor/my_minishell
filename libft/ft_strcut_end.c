@@ -18,7 +18,6 @@ char	*ft_strcut_end(char const *s, char c)
 	int		size;
 	int		len;
 	char	*str;
-	char	*end;
 
 	i = 0;
 	size = 0;
@@ -26,7 +25,6 @@ char	*ft_strcut_end(char const *s, char c)
 	i = len - 1;
 	while (s[i] != c)
 		i--;
-	end = (char *)&s[i];
 	size = len - i;
 	str = (char *)malloc((size) + 1);
 	i = 0;

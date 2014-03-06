@@ -16,11 +16,7 @@ int			ft_setenv(t_data *data, char *varname, char *var)
 {
 	char	*varandname;
 	char	*tmp;
-	int		len;
-	int		i;
 
-	i = 0;
-	len = ft_strlen(varname);
 	tmp = ft_strjoin(varname, "=");
 	varandname = ft_strjoin(tmp, var);
 	set_var_env(data, varandname);
